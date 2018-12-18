@@ -5,5 +5,6 @@ module Types
     field :remove_todo, mutation: Mutations::RemoveTodo
     field :remove_list, mutation: Mutations::RemoveList
     field :rename_list, mutation: Mutations::RenameList
+    field :toggle_todo_complete, mutation: Mutations::ToggleTodoComplete
   end
 end
