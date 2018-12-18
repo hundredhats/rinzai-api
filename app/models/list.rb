@@ -1,5 +1,5 @@
 class List < ApplicationRecord
   validates :name, presence: true
 
-  has_many :todos
+  has_many :todos, dependent: :destroy
 end
