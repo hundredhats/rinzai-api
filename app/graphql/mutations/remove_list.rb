@@ -1,5 +1,7 @@
 module Mutations
   class RemoveList < Mutations::BaseMutation
+    description "Remove an existing List"
+
     argument :id, Integer, required: true
 
     field :list, Types::ListType, null: true

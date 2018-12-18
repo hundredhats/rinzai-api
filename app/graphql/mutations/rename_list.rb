@@ -1,5 +1,7 @@
 module Mutations
   class RenameList < Mutations::BaseMutation
+    description "Rename an existing List"
+
     argument :id, Integer, required: true
     argument :name, String, required: true
 

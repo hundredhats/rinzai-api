@@ -1,5 +1,7 @@
 module Mutations
   class CreateTodo < Mutations::BaseMutation
+    description "Create a Todo and connect it to a List"
+
     argument :list_id, Integer, required: true
     argument :description, String, required: true
 

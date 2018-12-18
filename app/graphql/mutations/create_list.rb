@@ -1,5 +1,7 @@
 module Mutations
   class CreateList < Mutations::BaseMutation
+    description "Create an empty List"
+
     argument :name, String, required: true
 
     field :list, Types::ListType, null: true
